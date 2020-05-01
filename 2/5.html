@@ -68,7 +68,7 @@ Från Göteborg till Örebro (E)<br>
   <img src="vaners.jpg">
 </p>
 
-<form action="../fin.html" method="post">
+<form action="../fin.html" method="get">
  <ul>
   <li>
     <label for="name">LATLON</label>
@@ -89,9 +89,9 @@ nameInput.addEventListener('input', () => {
 
 nameInput.addEventListener('invalid', () => {
   if(nameInput.value === '') {
-    nameInput.setCustomValidity("Has d'entrar algo!");
+    nameInput.setCustomValidity("Entra algo!");
   } else {
-    nameInput.setCustomValidity('No has trobat la resposta correcta');
+    nameInput.setCustomValidity('Respuesta incorrecta');
   }
 });
 </script>

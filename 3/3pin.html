@@ -81,7 +81,7 @@ function reset() {
 
   <img src="bw3.jpg">
 </p>
-<form action="./4kal.html" method="post">
+<form action="./4kal.html" method="get">
  <ul>
   <li>
     <label for="name">PIN PERSONALIZADO:</label>
@@ -100,9 +100,9 @@ nameInput.addEventListener('input', () => {
 
 nameInput.addEventListener('invalid', () => {
   if(nameInput.value === '') {
-    nameInput.setCustomValidity("Has d'entrar algo!");
+    nameInput.setCustomValidity("Entra tu PIN!");
   } else {
-    nameInput.setCustomValidity('No has trobat la resposta correcta');
+    nameInput.setCustomValidity('PIN incorrecto');
   }
 });
 </script>
