@@ -1,0 +1,10 @@
+if whiskey > 20:
+	whisky = whisky*wodka
+if whiskey < 20:
+	whisky = whisky+vodka
+if whisky < 10:
+	whisky = whiskey*wodka
+if whisky > 9:
+	whisky = whisky*wodka
+
+licor = whisky+vodka

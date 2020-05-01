@@ -1,0 +1,43 @@
+<html>
+<head>
+	
+<head>
+  <link rel="stylesheet" type="text/css" href="../bebidas.css">
+  <meta charset="UTF-8">
+</head>
+
+<body>
+<h1>TIENDA ONLINE DE BEBIDAS IMPORTADAS</h1>
+<img src="../likoer.jpg">
+<img src="../venezu.png">
+<form action="./3pin.html" method="post">
+ <ul>
+  <li>
+    <label for="name">A cuanto sale el licor?</label>
+    <input type="text" id="name" name="name" required pattern="434343">
+  </li>
+  <li class="button">
+  <button type="submit">Enviar</button>
+  <script>
+  	const nameInput = document.querySelector('input');
+const form = document.querySelector('form');
+
+nameInput.addEventListener('input', () => {
+  nameInput.setCustomValidity('');
+  nameInput.checkValidity();
+});
+
+nameInput.addEventListener('invalid', () => {
+  if(nameInput.value === '') {
+    nameInput.setCustomValidity("Tienes que entrar el precio");
+  } else {
+    nameInput.setCustomValidity('No es correcto');
+  }
+});
+</script>
+</li>
+</ul>
+</form>
+
+</body>
+</html>
